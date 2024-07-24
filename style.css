@@ -1,0 +1,29 @@
+*{
+    font-family: Núnito, sans-serif;
+
+}
+
+#mudatamanho{
+    font-size: 3pc ;
+    text-align: center;
+    color:#610588;
+}
+body{
+    background-color:#aa72e2;
+    padding: 20px;
+
+}
+#cor-fundo{
+    background-color: #610588;
+    padding: 100px, 0, 0, 0;
+}
+
+#planofundo{
+    color: #610588;
+    font-size: 1pc;
+}
+
+#final{
+    text-align: center;
+    
+}
