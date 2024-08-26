@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU CINEMA</title>
+    <link rel="stylesheet" href="./globo.css">
+    <link rel="stylesheet" href="./FavoriteMovie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>MEU FILME FAVORITO</h1>
+        <ul>
+            <li>
+                <a href="./index.html" class="link-pagina"> Pagina principal</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="div-informacoes">
+            <h2 id="nome">POUSANDO NO AMOR!</h2>
+            <div>
+                <h2>ÚLTIMA VEZ QUE ASSISTI:</h2>
+                <p id="data">24/10/23</p>
+            </div>
+            <div>
+                <h2>DESCRIÇÃO:</h2>
+                <p id="descricao">
+                    Em Pousando no Amor, uma jovem herdeira sul-coreana decide fazer um passeio 
+                    de parapente para testar os novos produtos esportivos da empresa de sua família.
+                    Mas durante o percurso, ela acaba presa em um tornado e é jogada para fora da 
+                    fronteira da Coréia do Sul, caindo em solo norte-coreano. Já no chão, ela acaba 
+                    conhecendo um jovem general do exército que decide ajudá-la a se esconder.
+                    Durante esse período juntos, oss dois acabam criando uma forte conexão.
+                </p>
+            </div>
+        </div>
+        <div class="div-personagens">
+            <h2>PERSONAGENS</h2>
+            <div class="cards">
+                <div class="card">
+                    <h2 id="personagem-um">Casal Principal</h2>
+                    <img src="./imagens/pousando no amor.webp" alt="primeiro personagem" id="imagem-p1">
+                </div>
+                <div class="card">
+                    <h2 id="personagem-dois">Secundários</h2>
+                    <img src="./imagens/pousando 2.webp" alt="segundo personagem" id="imagem-p2">
+                </div>
+            </div>
+        </div>
+        <button id="abrir-modal">Editar Filme</button>
+    </main>
+    <div id="modal" class=" div-modal escondida">
+        <div>
+            <h2>Adicionar Filme</h2>
+            <form action="" id="novo-filme">
+                <label for="novo-nome">Nome</label>
+                <input type="text" id="novo-nome" placeholder="Nome do Filme">
+                <label for="nova-data">Data</label>
+                <input type="data" id="nova-data" placeholder="Data em que assistiu">
+                <label for="nova-descricao">Descrição</label>
+                <input type="text" id="nova-descricao" placeholder="Descrição do Filme">
+
+                <label for="novo-p1">Nome Personagem 1</label>
+                <input type="text" id="novo-p1" placeholder="Nome do Personagem 1">
+                <label for="imagem-p1">Imagem do Personagem 1</label>
+                <input id="nova-imagem-p1" class="input-arquivo" type="file" value="">
+
+                <label for="novo-p2">Nome Personagem 2</label>
+                <input type="text" id="novo-p2" placeholder="Nome do Personagem 2">
+                <label for="imagem-p2">Imagem do Personagem 2</label>
+                <input id="nova-imagem-p2" class="input-arquivo" type="file" value="">
+                
+                <button id="novo-filme">Salvar</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Desenvolvimento por <b>Adapte</b> com <i class="fa fa-solid fa-heart"></i></p>
+    </footer>
+</body>
+</html>
